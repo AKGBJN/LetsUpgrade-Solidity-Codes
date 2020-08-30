@@ -2,16 +2,16 @@ pragma solidity 0.4.18 <= 0.6.12;
 
 contract Pharmacy{
   
-    int bill_id;
-    string date;
-    string cust_Name;  
-    string hospital_Name;
-    string cust_Addrs;
-    uint cust_contact_no;
-    uint quantity;
-    uint bill_amount;
+    int public bill_id;
+    string public date;
+    string public cust_Name;  
+    string public hospital_Name;
+    string public cust_Addrs;
+    uint public cust_contact_no;
+    uint public quantity;
+    uint public bill_amount;
     
-    function Pharmacy_Data(int id, string newDate, string newCustName, string newHospital, string newCustAddrs, uint newContact , uint newQuantity, uint newTotalBill) public {
+    function Pharmacy(int id, string newDate, string newCustName, string newHospital, string newCustAddrs, uint newContact , uint newQuantity, uint newTotalBill) public {
         
         bill_id = id;
         date = newDate;
